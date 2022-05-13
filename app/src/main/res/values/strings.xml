@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ZakatAceh</string>
+    <string name="placeholder_username">Masukkan Nama Pengguna</string>
+    <string name="placeholder_password">Masukkan Kata Sandi</string>
+    <string name="btn_masuk">Masuk</string>
+    <string name="placeholder_name">Masukkan nama lengkap</string>
+    <string name="placeholder_email">Masukkan email</string>
+    <string name="placeholder_nohp">Masukkan nomor telepon</string>
+    <string name="placeholder_confirmpassword">Masukkan konfirmasi kata sandi</string>
+    <string name="btn_daftar">Daftar</string>
+    <string name="arrow_right"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
