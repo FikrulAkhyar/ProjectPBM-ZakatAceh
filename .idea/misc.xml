@@ -7,13 +7,13 @@
         <entry key="app/src/main/res/layout/activity_history_user.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3196945190429688" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18342391304347827" />
-        <entry key="app/src/main/res/layout/activity_main_user.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_user.xml" value="0.23328704833984376" />
         <entry key="app/src/main/res/layout/activity_profile_user.xml" value="0.26195526123046875" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.30961907428243884" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.3268978795261248" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.26358695652173914" />
-        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1935185185185185" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

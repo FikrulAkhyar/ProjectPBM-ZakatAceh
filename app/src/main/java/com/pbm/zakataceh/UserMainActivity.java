@@ -22,7 +22,7 @@ public class UserMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_user);
         binding = ActivityMainUserBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new ProfileFragment());
+        replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
