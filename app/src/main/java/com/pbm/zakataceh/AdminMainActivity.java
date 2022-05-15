@@ -1,39 +1,36 @@
 package com.pbm.zakataceh;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import com.pbm.zakataceh.databinding.ActivityMainAdminBinding;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.pbm.zakataceh.databinding.ActivityMainUserBinding;
+public class AdminMainActivity extends AppCompatActivity {
 
-public class UserMainActivity extends AppCompatActivity {
-
-    ActivityMainUserBinding binding;
+    ActivityMainAdminBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_user);
-        binding = ActivityMainUserBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_main_admin);
+        binding = ActivityMainAdminBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new UserHomeFragment());
+        replaceFragment(new AdminHomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
-                case R.id.historyFragment:
-                    replaceFragment(new HistoryFragment());
+                case R.id.pemberiFragment:
+                    replaceFragment(new PemberiFragment());
                     break;
-                case R.id.userHomeFragment:
-                    replaceFragment(new UserHomeFragment());
+                case R.id.adminHomeFragment:
+                    replaceFragment(new AdminHomeFragment());
                     break;
-                case R.id.profileFragment:
-                    replaceFragment(new ProfileFragment());
+                case R.id.penerimaFragment:
+                    replaceFragment(new PenerimaFragment());
                     break;
             }
             return true;
