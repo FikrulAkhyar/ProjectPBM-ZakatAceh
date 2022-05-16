@@ -3,10 +3,15 @@ package com.pbm.zakataceh;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.pbm.zakataceh.databinding.FragmentProfileBinding;
+import com.pbm.zakataceh.databinding.FragmentUserHomeBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +20,7 @@ import android.view.ViewGroup;
  */
 public class UserHomeFragment extends Fragment {
 
+    FragmentUserHomeBinding binding;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -59,6 +65,18 @@ public class UserHomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_home, container, false);
+        binding = FragmentUserHomeBinding.inflate(inflater, container, false);
+        binding.btnHomeStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, new PaymentFragment());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+        return binding.getRoot();
+//        return inflater.inflate(R.layout.fragment_user_home, container, false);
     }
 }

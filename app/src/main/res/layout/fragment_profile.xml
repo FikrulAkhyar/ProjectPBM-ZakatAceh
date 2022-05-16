@@ -4,12 +4,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ProfileFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Profile"
+        android:text="Akun Saya"
+        android:fontFamily="@font/jost"
         android:textSize="26dp"
-        android:gravity="center" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/danger">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_awesome"
+            android:text="\uf06a"
+            android:textSize="30dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:paddingEnd="20dp"
+            android:text="Harap lengkapi data anda sebelum melakukan pembayaran zakat"
+            android:fontFamily="@font/jost"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="fikrul18"
+            android:fontFamily="@font/jost"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Fikrul Akhyar"
+            android:fontFamily="@font/jost"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/jost"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="fikrul18@gmail.com"
+            android:fontFamily="@font/jost"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon"
+            android:fontFamily="@font/jost"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="082261189789"
+            android:fontFamily="@font/jost"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="400dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Kartu Keluarga"
+            android:fontFamily="@font/jost"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="100000000102012"
+            android:fontFamily="@font/jost"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textStyle="bold"
+            android:fontFamily="@font/jost"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Darussalam, Banda Aceh"
+            android:fontFamily="@font/jost"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ubah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Ubah Profil"
+        android:textStyle="bold"
+        android:fontFamily="@font/jost"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center_horizontal"/>
+
 </FrameLayout>

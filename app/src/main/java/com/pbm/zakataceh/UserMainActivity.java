@@ -35,6 +35,9 @@ public class UserMainActivity extends AppCompatActivity {
                 case R.id.profileFragment:
                     replaceFragment(new ProfileFragment());
                     break;
+                case R.id.btn_ubah:
+                    replaceFragment(new ProfileEditFragment());
+                    break;
             }
             return true;
         });

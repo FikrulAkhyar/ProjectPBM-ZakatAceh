@@ -4,12 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".UserHomeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="239dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="54dp"
         android:layout_height="wrap_content"
-        android:text="Halaman Home User"
-        android:textSize="26dp"
-        android:gravity="center" />
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_circle"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf2f5"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Pembayaran Zakat"
+            android:textStyle="bold"
+            android:fontFamily="@font/jost"/>
+
+        <TextView
+            android:id="@+id/tanggal_pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"
+            android:text="01 Mei 2022 - 10 Mei 2022"
+            android:fontFamily="@font/jost"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/border_textview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Beras Per Kilogram Hari Ini"
+            android:textStyle="bold"
+            android:fontFamily="@font/jost"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/harga_beras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:text="Rp. 14.000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="@font/jost"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rice"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_home_start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Mulai"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jost"
+        android:textStyle="bold"/>
 </FrameLayout>

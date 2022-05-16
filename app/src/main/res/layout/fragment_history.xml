@@ -4,12 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".HistoryFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman History"
+        android:text="Riwayat"
+        android:fontFamily="@font/jost"
         android:textSize="26dp"
-        android:gravity="center" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="50dp">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Pembayaran Zakat"
+                android:textStyle="bold"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Status"
+                android:gravity="right"
+                android:layout_marginEnd="100dp"
+                android:textStyle="bold"
+                android:padding="3dip" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/item_history" />
+    </TableLayout>
 </FrameLayout>
