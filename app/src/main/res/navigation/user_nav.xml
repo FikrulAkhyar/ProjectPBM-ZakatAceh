@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav"
+    android:id="@+id/user_nav"
     app:startDestination="@id/profileFragment">
     <fragment
         android:id="@+id/profileFragment"
@@ -10,10 +10,10 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.pbm.zakataceh.HomeFragment"
+        android:id="@+id/userHomeFragment"
+        android:name="com.pbm.zakataceh.UserHomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_user_home" />
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.pbm.zakataceh.HistoryFragment"

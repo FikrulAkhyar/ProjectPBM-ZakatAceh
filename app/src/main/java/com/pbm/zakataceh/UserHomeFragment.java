@@ -10,18 +10,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbm.zakataceh.databinding.ActivityMainUserBinding;
 import com.pbm.zakataceh.databinding.FragmentProfileBinding;
+import com.pbm.zakataceh.databinding.FragmentUserHomeBinding;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProfileFragment#newInstance} factory method to
+ * Use the {@link UserHomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProfileFragment extends Fragment {
+public class UserHomeFragment extends Fragment {
 
-    FragmentProfileBinding binding;
-
+    FragmentUserHomeBinding binding;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +30,7 @@ public class ProfileFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProfileFragment() {
+    public UserHomeFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +40,11 @@ public class ProfileFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProfileFragment.
+     * @return A new instance of fragment UserHomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProfileFragment newInstance(String param1, String param2) {
-        ProfileFragment fragment = new ProfileFragment();
+    public static UserHomeFragment newInstance(String param1, String param2) {
+        UserHomeFragment fragment = new UserHomeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,18 +65,18 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentProfileBinding.inflate(inflater, container, false);
-        binding.btnUbah.setOnClickListener(new View.OnClickListener() {
+        binding = FragmentUserHomeBinding.inflate(inflater, container, false);
+        binding.btnHomeStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout, new ProfileEditFragment());
+                fragmentTransaction.replace(R.id.frame_layout, new PaymentFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
         return binding.getRoot();
-//        return inflater.inflate(R.layout.fragment_profile, container, false);
+//        return inflater.inflate(R.layout.fragment_user_home, container, false);
     }
 }

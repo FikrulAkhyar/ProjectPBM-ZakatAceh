@@ -7,11 +7,12 @@
         android:title="Riwayat"
         android:icon="@drawable/ic_history"/>
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/userHomeFragment"
         android:title="Beranda"
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/profileFragment"
         android:title="Akun Saya"
+        android:checked="true"
         android:icon="@drawable/ic_person"/>
 </menu>

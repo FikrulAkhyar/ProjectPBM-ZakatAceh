@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PaymethodFragment">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_circle"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf060"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Metode Pembayaran"
+            android:fontFamily="@font/jost"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/dana_logo"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DANA"
+                    android:fontFamily="@font/jost"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/dana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:checked="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ovo_logo"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OVO"
+                    android:fontFamily="@font/jost"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15dp"/>
+
+                <RadioButton
+                    android:id="@+id/ovo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"/>
+            </LinearLayout>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Zakat"
+                android:fontFamily="@font/jost"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 175.000"
+                android:fontFamily="@font/jost"
+                android:layout_marginStart="150dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_bayar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Bayar Sekarang"
+        android:layout_marginTop="450dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jost"
+        android:textStyle="bold"/>
+
+</FrameLayout>

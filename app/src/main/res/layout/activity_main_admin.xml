@@ -5,7 +5,7 @@
     android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserMainActivity">
+    tools:context=".AdminMainActivity">
 
     <FrameLayout
         android:id="@+id/frame_layout"
@@ -26,6 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="#fff"
-        app:menu="@menu/user_bottom_menu" />
+        app:menu="@menu/admin_bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav"
+    app:startDestination="@id/adminHomeFragment">
+    <fragment
+        android:id="@+id/pemberiFragment"
+        android:name="com.pbm.zakataceh.PemberiFragment"
+        android:label="fragment_pemberi"
+        tools:layout="@layout/fragment_pemberi" />
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.pbm.zakataceh.AdminHomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_admin_home" />
+    <fragment
+        android:id="@+id/penerimaFragment"
+        android:name="com.pbm.zakataceh.PenerimaFragment"
+        android:label="fragment_penerima"
+        tools:layout="@layout/fragment_penerima" />
+</navigation>
