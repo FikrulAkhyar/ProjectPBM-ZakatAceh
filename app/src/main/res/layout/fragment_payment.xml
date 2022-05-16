@@ -19,7 +19,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp">
 
@@ -40,7 +40,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/border_textview"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp">
@@ -71,7 +71,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Bayar Sekarang"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="420dp"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/jost"
         android:textStyle="bold"/>
@@ -79,7 +79,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="490dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp">
 
@@ -96,16 +96,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Perhitungan total zakat adalah harga 2,5 kg beras dikali jumlah pemberi zakat."
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
             android:layout_marginBottom="60dp"
+            android:fontFamily="@font/jost"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:textSize="15dp"
+            android:text="Perhitungan total zakat adalah harga 2,5 kg beras dikali jumlah pemberi zakat."
             android:textAlignment="center"
-            android:fontFamily="@font/jost"
-            android:textStyle="bold"/>
+            android:textSize="15dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 </FrameLayout>
