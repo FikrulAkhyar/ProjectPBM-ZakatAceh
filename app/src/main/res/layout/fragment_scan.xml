@@ -3,12 +3,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanFragment">
+    tools:context=".ScanFragment"
+    android:background="@color/background">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_circle"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf060"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/dana_qr"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"/>
+
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Zakat"
+                android:fontFamily="@font/jost"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 175.000"
+                android:fontFamily="@font/jost"
+                android:layout_marginStart="150dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_bayar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Bayar Sekarang"
+        android:layout_marginTop="450dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jost"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Petunjuk"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jost"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/jost"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Tekan tombol sudah bayar jika sudah melakukan pembayaran melalui kode QR yang tersedia.."
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
 
 </FrameLayout>

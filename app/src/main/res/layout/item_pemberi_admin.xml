@@ -5,13 +5,15 @@
 
     <TableRow>
         <TextView
+            android:id="@+id/dataPemberi"
             android:layout_column="1"
-            android:text="02 Mei 2022 \nRp. 175.000,00"
+            android:text="Saiful \n111104932111"
             android:padding="3dip"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/status"
             android:layout_column="2"
             android:layout_width="wrap_content"
             android:layout_marginStart="110dp"

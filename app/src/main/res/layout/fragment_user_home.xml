@@ -8,7 +8,7 @@
     tools:context=".UserHomeFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo"
         android:layout_width="239dp"
         android:layout_height="111dp"
         android:layout_gravity="center_horizontal"

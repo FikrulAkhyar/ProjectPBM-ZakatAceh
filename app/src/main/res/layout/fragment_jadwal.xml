@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".ProfileEditFragment">
+    tools:context=".JadwalFragment"
+    android:background="@color/background">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubah Profile"
+        android:text="Atur Jadwal"
         android:fontFamily="@font/jost"
         android:textSize="26dp"
         android:layout_marginStart="10dp"
@@ -27,52 +27,64 @@
         android:layout_marginStart="20dp"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/mulaibayar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Masukkan email"
+        android:hint="Masukkan jadwal mulai pembayaran"
         android:fontFamily="@font/jost"
-        android:inputType="textEmailAddress"
+        android:inputType="date"
         android:layout_marginTop="130dp"/>
 
     <EditText
-        android:id="@+id/no_hp"
+        android:id="@+id/akhirbayar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Masukkan nomor telepon"
+        android:hint="Masukkan jadwal akhir pembayaraan"
         android:fontFamily="@font/jost"
-        android:inputType="phone"
+        android:inputType="date"
         android:layout_marginTop="190dp"/>
 
     <EditText
-        android:id="@+id/no_kk"
+        android:id="@+id/mulaisalur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Masukkan nomor kartu keluarga"
+        android:hint="Masukkan jadwal mulai penyaluran"
         android:fontFamily="@font/jost"
-        android:inputType="number"
+        android:inputType="date"
         android:layout_marginTop="250dp"/>
 
     <EditText
-        android:id="@+id/alamat"
+        android:id="@+id/akhirsalur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Masukkan alamat"
+        android:hint="Masukkan jadwal akhir penyaluran"
         android:fontFamily="@font/jost"
-        android:inputType="phone"
+        android:inputType="date"
         android:layout_marginTop="310dp"/>
+
+    <EditText
+        android:id="@+id/harga_beras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Masukkan harga beras"
+        android:fontFamily="@font/jost"
+        android:inputType="number"
+        android:layout_marginTop="370dp"/>
 
     <Button
         android:id="@+id/btn_simpan"
@@ -80,7 +92,7 @@
         android:layout_height="wrap_content"
         android:text="Simpan"
         android:fontFamily="@font/jost"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="450dp"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"/>
 

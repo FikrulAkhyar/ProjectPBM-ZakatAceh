@@ -87,6 +87,7 @@ public class PaymethodFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
-        return inflater.inflate(R.layout.fragment_paymethod, container, false);
+//        return inflater.inflate(R.layout.fragment_paymethod, container, false);
+        return binding.getRoot();
     }
 }
