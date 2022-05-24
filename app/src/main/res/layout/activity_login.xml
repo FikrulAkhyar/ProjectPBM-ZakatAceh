@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -76,18 +77,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewDaftar"
+        android:id="@+id/linkDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginBottom="96dp"
-        android:autoLink="web"
         android:fontFamily="@font/jost"
         android:text="Daftar"
+        android:linksClickable="true"
+        android:textColor="@color/primary"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewQuestion" />
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/textView"
