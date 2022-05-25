@@ -23,6 +23,14 @@
         <activity
             android:name=".SignupActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UserMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AdminMainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

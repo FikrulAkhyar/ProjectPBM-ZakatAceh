@@ -1,5 +1,6 @@
 package com.pbm.zakataceh;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -59,6 +60,8 @@ public class UserHomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
@@ -76,6 +79,15 @@ public class UserHomeFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent activityChangeIntent = new Intent(getContext(), LoginActivity.class);
+                startActivity(activityChangeIntent);
+            }
+        });
+
         return binding.getRoot();
 //        return inflater.inflate(R.layout.fragment_user_home, container, false);
     }

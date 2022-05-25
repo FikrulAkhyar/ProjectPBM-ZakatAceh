@@ -25,5 +25,22 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(activityChangeIntent);
             }
         });
+
+        binding.btnMasuk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username = binding.username.getText().toString();
+                Intent activityChangeIntent;
+
+                if(username.equals("admin")) {
+                    activityChangeIntent = new Intent(LoginActivity.this, AdminMainActivity.class);
+                }
+                else {
+                    activityChangeIntent = new Intent(LoginActivity.this, UserMainActivity.class);
+                }
+
+                startActivity(activityChangeIntent);
+            }
+        });
     }
 }

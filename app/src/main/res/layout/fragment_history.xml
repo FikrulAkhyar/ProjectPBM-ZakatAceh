@@ -39,11 +39,27 @@
                 android:padding="3dip" />
         </TableRow>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/history_pembayaran"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:listitem="@layout/item_history_user" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/history_pembayaran"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--            tools:listitem="@layout/item_history_user" />-->
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="26 Mei 2022 \nRp. 175.000"
+                android:padding="3dip"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginEnd="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Menunggu" />
+        </TableRow>
     </TableLayout>
 </FrameLayout>

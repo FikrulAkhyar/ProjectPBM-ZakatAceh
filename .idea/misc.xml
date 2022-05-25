@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/activity_login.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/activity_main_user.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_admin_home.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_history.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_payment.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_paymethod.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_pemberi.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_penerima.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_profile_edit.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_scan.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_tambah_penerima.xml" value="0.2477355072463768" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/fragment_user_home.xml" value="0.12360688956433637" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/item_history_user.xml" value="0.1" />
+        <entry key="..\:/CooL-Yeah/PBM/Task/Proyek/ProjectPBM-ZakatAceh/app/src/main/res/layout/item_pemberi_admin.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/drawable/border_textview.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/btn_circle.xml" value="0.2045" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1" />

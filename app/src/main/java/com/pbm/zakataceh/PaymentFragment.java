@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.pbm.zakataceh.databinding.FragmentPaymentBinding;
 import com.pbm.zakataceh.databinding.FragmentUserHomeBinding;
@@ -85,6 +88,27 @@ public class PaymentFragment extends Fragment {
                 fragmentTransaction.replace(R.id.frame_layout, new UserHomeFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+            }
+        });
+
+
+        binding.jumlahPemberi.addTextChangedListener(new TextWatcher() {
+
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+                String jumlahPemberi = binding.jumlahPemberi.getText().toString();
+                double total = Double.parseDouble(jumlahPemberi);
+                total = total * 14000 * 2.5;
+                int total_akhir = (int) total;
+                binding.totalZakat.setText("Rp. " + String.valueOf(total_akhir));
             }
         });
         return binding.getRoot();

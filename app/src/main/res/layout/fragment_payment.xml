@@ -30,6 +30,7 @@
             android:fontFamily="@font/jost"
             android:textStyle="bold"/>
         <EditText
+            android:id="@+id/jumlah_pemberi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -55,15 +56,16 @@
             android:fontFamily="@font/jost"/>
 
         <TextView
+            android:id="@+id/total_zakat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rp. 0"
             android:layout_marginTop="60dp"
             android:layout_marginBottom="60dp"
-            android:textSize="30dp"
-            android:textAlignment="center"
             android:fontFamily="@font/jost"
-            android:textStyle="bold"/>
+            android:text="Rp. 0"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <Button

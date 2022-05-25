@@ -16,7 +16,7 @@
         android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogOut"
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"

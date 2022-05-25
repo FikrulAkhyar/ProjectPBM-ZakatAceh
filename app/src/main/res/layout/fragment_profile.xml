@@ -137,8 +137,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="100000000102012"
-            android:fontFamily="@font/jost"/>
+            android:fontFamily="@font/jost"
+            android:textColor="@color/danger"
+            android:text="Belum diisi" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/jost"-->
+<!--            android:text="1181" />-->
 
     </RelativeLayout>
 
@@ -159,8 +167,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Darussalam, Banda Aceh"
+            android:textColor="@color/danger"
+            android:text="Belum diisi"
             android:fontFamily="@font/jost"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Jalan Meureubo No. 99"-->
+<!--            android:fontFamily="@font/jost"/>-->
 
     </RelativeLayout>
 

@@ -52,7 +52,7 @@
         android:id="@+id/btn_bayar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Bayar Sekarang"
+        android:text="SUDAH BAYAR"
         android:layout_marginTop="450dp"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/jost"

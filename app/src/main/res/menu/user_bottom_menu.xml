@@ -2,6 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
         android:id="@+id/historyFragment"
         android:title="Riwayat"
@@ -9,10 +10,9 @@
     <item
         android:id="@+id/userHomeFragment"
         android:title="Beranda"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/ic_home" />
     <item
         android:id="@+id/profileFragment"
         android:title="Akun Saya"
-        android:checked="true"
         android:icon="@drawable/ic_person"/>
 </menu>
