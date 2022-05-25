@@ -18,11 +18,13 @@
         android:textStyle="bold" />
 
     <RelativeLayout
+        android:id="@+id/lengkapi_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
+        android:visibility="visible"
         android:background="@color/danger">
 
         <TextView
@@ -38,10 +40,10 @@
             android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
+            android:fontFamily="@font/jost"
             android:paddingEnd="20dp"
             android:text="Harap lengkapi data anda sebelum melakukan pembayaran zakat"
-            android:fontFamily="@font/jost"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -94,6 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="fikrul18@gmail.com"
+            android:textColor="@color/black"
             android:fontFamily="@font/jost"/>
 
     </RelativeLayout>
@@ -115,8 +118,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="082261189789"
-            android:fontFamily="@font/jost"/>
+            android:fontFamily="@font/jost"
+            android:textColor="@color/black"
+            android:text="082261189789" />
 
     </RelativeLayout>
 
@@ -134,19 +138,13 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/no_kk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/jost"
-            android:textColor="@color/danger"
-            android:text="Belum diisi" />
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:fontFamily="@font/jost"-->
-<!--            android:text="1181" />-->
+            android:text="Belum diisi"
+            android:textColor="@color/danger" />
 
     </RelativeLayout>
 
@@ -164,19 +162,13 @@
             android:fontFamily="@font/jost"/>
 
         <TextView
+            android:id="@+id/alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textColor="@color/danger"
             android:text="Belum diisi"
             android:fontFamily="@font/jost"/>
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:text="Jalan Meureubo No. 99"-->
-<!--            android:fontFamily="@font/jost"/>-->
 
     </RelativeLayout>
 

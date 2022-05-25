@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPenerimaFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah Data Penerima"
+        android:fontFamily="@font/jost"
+        android:textSize="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_circle"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf060"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:text="Saiful"
+        android:fontFamily="@font/jost"
+        android:inputType="text"
+        android:layout_marginTop="130dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:text="saiful@gmail.com"
+        android:fontFamily="@font/jost"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="190dp"/>
+
+    <EditText
+        android:id="@+id/no_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:text="085212345678"
+        android:fontFamily="@font/jost"
+        android:inputType="phone"
+        android:layout_marginTop="250dp"/>
+
+    <EditText
+        android:id="@+id/no_kk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:text="119162"
+        android:fontFamily="@font/jost"
+        android:inputType="number"
+        android:layout_marginTop="310dp"/>
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:text="Jalan Meureubo No. 100"
+        android:fontFamily="@font/jost"
+        android:inputType="text"
+        android:layout_marginTop="370dp"/>
+
+    <Button
+        android:id="@+id/btn_ubah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Ubah"
+        android:fontFamily="@font/jost"
+        android:layout_marginTop="450dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+</FrameLayout>

@@ -1,5 +1,6 @@
 package com.pbm.zakataceh;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -67,6 +68,21 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false);
+
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            String noKK = bundle.getString("noKk");
+            String alamat = bundle.getString("alamat");
+
+            binding.noKk.setText(String.valueOf(noKK));
+            binding.noKk.setTextColor(Color.BLACK);
+
+            binding.alamat.setText(String.valueOf(alamat));
+            binding.alamat.setTextColor(Color.BLACK);
+
+            binding.lengkapiData.setVisibility(View.INVISIBLE);
+        }
+
         binding.btnUbah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

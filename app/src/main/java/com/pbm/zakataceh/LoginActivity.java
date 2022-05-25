@@ -18,6 +18,13 @@ public class LoginActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        Intent intent = getIntent();
+        String message = intent.getStringExtra("message");
+
+        if (message != null) {
+            binding.message.setVisibility(View.VISIBLE);
+        }
+
         binding.linkDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

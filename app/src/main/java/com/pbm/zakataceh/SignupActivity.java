@@ -25,5 +25,14 @@ public class SignupActivity extends AppCompatActivity {
                 startActivity(activityChangeIntent);
             }
         });
+
+        binding.btnDaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent activityChangeIntent = new Intent(SignupActivity.this, LoginActivity.class);
+                activityChangeIntent.putExtra("message", "Berhasil mendaftar!");
+                startActivity(activityChangeIntent);
+            }
+        });
     }
 }
