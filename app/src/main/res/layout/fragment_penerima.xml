@@ -85,7 +85,9 @@
 <!--            app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
 <!--            tools:listitem="@layout/item_pemberi_admin" />-->
 
-        <TableRow>
+        <TableRow
+            android:id="@+id/penerimaSatu"
+            android:visibility="invisible">
             <Button
                 android:id="@+id/btn_penerima"
                 android:layout_column="1"
@@ -101,6 +103,7 @@
                 style="?android:attr/borderlessButtonStyle" />
 
             <Button
+                android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="2"

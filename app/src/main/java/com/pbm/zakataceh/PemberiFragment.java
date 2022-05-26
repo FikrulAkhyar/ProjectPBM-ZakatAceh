@@ -1,5 +1,6 @@
 package com.pbm.zakataceh;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -67,12 +68,29 @@ public class PemberiFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentPemberiBinding.inflate(inflater, container, false);
 
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            String status = bundle.getString("status");
+            binding.status.setText(String.valueOf(status));
+        }
+
         binding.btnPemberi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.frame_layout, new DetailPemberiFragment());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        binding.status.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, new UbahStatusPemberiFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
