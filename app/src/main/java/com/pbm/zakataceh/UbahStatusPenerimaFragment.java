@@ -85,7 +85,7 @@ public class UbahStatusPenerimaFragment extends Fragment {
         binding.btnUbah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PemberiFragment penerimaFragment = new PemberiFragment();
+                PenerimaFragment penerimaFragment = new PenerimaFragment();
                 Bundle bundle = new Bundle();
                 String status = binding.dropStatus.getSelectedItem().toString();
                 bundle.putString("status", status);

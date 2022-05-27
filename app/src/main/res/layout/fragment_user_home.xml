@@ -50,7 +50,7 @@
             android:layout_marginTop="25dp"
             android:textAlignment="center"
             android:background="@drawable/border_textview"
-            android:text="01 Mei 2022 - 10 Mei 2022"
+            android:text="23 Mei 2022 - 28 Mei 2022"
             android:fontFamily="@font/jost"/>
 
     </RelativeLayout>

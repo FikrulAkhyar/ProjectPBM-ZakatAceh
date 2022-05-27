@@ -70,9 +70,13 @@ public class DetailPenerimaFragment extends Fragment {
         binding.btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                PenerimaFragment penerimaFragment = new PenerimaFragment();
+                bundle.putString("nama", "Saiful");
+                penerimaFragment.setArguments(bundle);
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout, new PenerimaFragment());
+                fragmentTransaction.replace(R.id.frame_layout, penerimaFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }

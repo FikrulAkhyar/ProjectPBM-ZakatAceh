@@ -1,5 +1,6 @@
 package com.pbm.zakataceh;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -76,6 +77,14 @@ public class AdminHomeFragment extends Fragment {
                 fragmentTransaction.replace(R.id.frame_layout, new JadwalFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+            }
+        });
+
+        binding.btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent activityChangeIntent = new Intent(getContext(), LoginActivity.class);
+                startActivity(activityChangeIntent);
             }
         });
         return binding.getRoot();

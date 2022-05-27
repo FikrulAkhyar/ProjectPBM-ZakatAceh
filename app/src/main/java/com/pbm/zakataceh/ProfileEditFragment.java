@@ -86,7 +86,7 @@ public class ProfileEditFragment extends Fragment {
 
                 Bundle bundle = new Bundle();
                 bundle.putString("noKk", "1181");
-                bundle.putString("alamat", "Jalan Meureubo N0. 99");
+                bundle.putString("alamat", "Jalan Meureubo No. 99");
                 profileFragment.setArguments(bundle);
 
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();

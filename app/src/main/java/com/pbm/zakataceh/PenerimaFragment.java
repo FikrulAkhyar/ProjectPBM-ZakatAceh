@@ -69,8 +69,13 @@ public class PenerimaFragment extends Fragment {
         binding = FragmentPenerimaBinding.inflate(inflater, container, false);
 
         Bundle bundle = getArguments();
+        String status;
         if (bundle != null) {
             binding.penerimaSatu.setVisibility(View.VISIBLE);
+            if (bundle.getString("status") != null) {
+                status = bundle.getString("status");
+                binding.status.setText(String.valueOf(status));
+            }
         }
         binding.btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
